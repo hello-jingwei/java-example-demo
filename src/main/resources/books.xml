@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<bookList id="bookList">
+    <book id="bookEntity">
+        <name>语文</name>
+        <createTime>2021</createTime>
+    </book>
+    <book>
+        <name>数学</name>
+        <createTime>2020</createTime>
+    </book>
+</bookList>
