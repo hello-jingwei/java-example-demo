@@ -12,5 +12,6 @@ import javax.xml.bind.annotation.*;
 public class Body<T> {
     @XmlAnyElement(lax = true)
     private T value;
+    @XmlElement(name = "world")
     private World world;
 }

@@ -5,7 +5,7 @@ import java.util.Date;
 public class XmlTest {
     public static void main(String[] args) {
         // 创建需要转换的对象
-        User user = new User(1, "Steven", "@sun123", new Date(), 1000.0);
+        User user = new User(1, "Steven", null, null, 1000.0);
         Animal animal = new Animal(1,"gray");
         World world = new World(user, animal);
         Body<User> body = new Body<>();

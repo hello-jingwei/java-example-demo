@@ -10,6 +10,8 @@ package com.mypattern.facade;
  *      2.子系统（Sub System）角色：实现系统的部分功能，客户可以通过外观角色访问它。
  *      3.客户（Client）角色：通过一个外观角色访问各个子系统的功能。
  */
+
+// 客户角色
 public class FacadePattern {
     public static void main(String[] args) {
         Facade f = new Facade();

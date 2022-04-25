@@ -46,7 +46,13 @@ public class CommonTest {
         // uri format
 //        String decStr = "startregion=%E5%AE%89%E5%BE%BD%E7%9C%81%2C%E6%B7%AE%E5%8C%97%E5%B8%82%2C%E7%9B%B8%E5%B1%B1%E5%8C%BA&endregion=%E5%AE%89%E5%BE%BD%E7%9C%81%2C%E6%B7%AE%E5%8C%97%E5%B8%82%2C%E7%9B%B8%E5%B1%B1%E5%8C%BA&startStationName=%E8%B5%B7%E5%A7%8B1&endStationName=%E7%9B%AE%E7%9A%841&vehicleNos=%E9%99%95A12392";
 //        System.out.println(URLDecoder.decode(decStr, StandardCharsets.UTF_8.toString()));
-        System.out.println("compare".matches(PASS_PATH_KEY_WORDS));
+//        System.out.println("compare".matches(PASS_PATH_KEY_WORDS));
+        Integer i1 = 127;
+        Integer i2 = 127;
+        Integer i3 = new Integer(127);
+        Integer i4 = new Integer(127);
+        System.out.println("i1 == i2：" + (i1 == i2));
+        System.out.println("i3 == i4：" + (i3 == i4));
     }
 
     private static void show(Class<?> clazz){

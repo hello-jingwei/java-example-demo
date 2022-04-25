@@ -1,6 +1,13 @@
 package com.mxml;
 
+import com.alibaba.fastjson.annotation.JSONField;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+
 import javax.xml.bind.annotation.*;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 import java.io.Serializable;
 import java.util.Date;
 
@@ -15,33 +22,26 @@ import java.util.Date;
         "birthday",
         "money",
 })
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
 public class User implements Serializable {
     private static final long serialVersionUID = 1L;
 
     // 用户Id
     private int userId;
     // 用户名
+    @XmlElement(name = "user_name")
+    @XmlJavaTypeAdapter(CDATATypeAdapter.class)
     private String userName;
     // 用户密码
+    @NonNull
     private String password;
     // 用户生日
+    @NonNull
     private Date birthday;
     // 用户钱包
     private double money;
-
-    public User() {
-        super();
-    }
-
-    public User(int userId, String userName, String password, Date birthday,
-                double money) {
-        super();
-        this.userId = userId;
-        this.userName = userName;
-        this.password = password;
-        this.birthday = birthday;
-        this.money = money;
-    }
 
     public int getUserId() {
         return userId;

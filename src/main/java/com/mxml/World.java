@@ -8,7 +8,7 @@ import javax.xml.bind.annotation.XmlType;
 // xml解析类型
 @XmlAccessorType(XmlAccessType.FIELD)
 // 根节点元素
-@XmlRootElement(name = "world")
+//@XmlRootElement(name = "world")
 // 控制绑定顺序
 @XmlType(propOrder = {"user","animal"})
 public class World {
